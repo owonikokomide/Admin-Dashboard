@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import { ProSidebar, MenuItem, Menu} from "react-pro-sidebar"
-import 'react-pro-sidebar/dist/css/styles.css'
+// import "react-pro-sidebar/dist/pro-sidebar.css";
+// import { ProSidebar, MenuItem, Menu} from "react-pro-sidebar"
 import { Box, IconButton, Typography, useTheme } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { tokens } from '../../Theme'
@@ -17,6 +17,7 @@ import  PieChartOutlinedIcon  from '@mui/icons-material/PiechartOutlined'
 import  TimelineOutlinedIcon  from '@mui/icons-material/TimelineOutlined'
 import  MenuOutlinedIcon  from '@mui/icons-material/MenuOutlined'
 import  MapOutlinedIcon  from '@mui/icons-material/MapOutlined'
+import { MenuOutlined } from '@mui/icons-material'
 
 
 function Sidebar() {
@@ -42,9 +43,29 @@ function Sidebar() {
         color: "#6870fa !important"
       }
     }}>
-        <ProSidebar collapsed={isCollapsed}>
+        {/* <ProSidebar collapsed={isCollapsed}>
+          <Menu iconShape="square">
+            <MenuItem  onClick={() => setIsCollapsed(!isCollapsed)}
+            icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
+            style={{
+              margin: "10px 0 20px 0",
+              color: colors.grey[100],
+            }}>
+              {!isCollapsed && (
+                <Box display="flex" justifyContent="space-between" alignItems="center" ml="15px">
+                   <Typography variant='h3' color={colors.grey[100]}>
+                    ADMINS
+                   </Typography>
+                   <IconButton onClick={()=> setIsCollapsed(!isCollapsed)}>
+                    <MenuOutlined />
+                   </IconButton>
+                </Box>
+              )
 
-        </ProSidebar>
+              }
+            </MenuItem>
+          </Menu>
+        </ProSidebar> */}
     </Box>
   )
 }
