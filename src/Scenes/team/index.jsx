@@ -75,6 +75,10 @@ const Team = ()=> {
         }, 
         "& .MuiDataGrid-virtualScroller": {
           backgroundColor: colors.primary[400]
+        },
+        "& .MuiDataGrid-footerContainer": {
+          borderTop: "none",
+          backgroundColor: colors.blueAccent[700]
         }
       }}
       >
