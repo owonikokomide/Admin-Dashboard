@@ -7,7 +7,7 @@ import {mockBarData as data} from "../Data/MockData"
 function Barchart({isDashboard = false}) {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-  return (
+  return ( 
     <ResponsiveBar
       data={data}
       theme={{
