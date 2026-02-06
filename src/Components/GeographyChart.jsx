@@ -5,7 +5,7 @@ import { tokens } from "../Theme";
 import { mockGeographyData as data } from "../Data/MockData";
 
 const GeographyChart = ({ isDashboard = false }) => {
-  const theme = useTheme();
+  const theme = useTheme(); 
   const colors = tokens(theme.palette.mode);
   return (
     <ResponsiveChoropleth
